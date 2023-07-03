@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--============== Bootstrap Css =================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Responsive Book store</title>
+</head>
+
+<body>
+
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+            <div class="container-fluid d-flex justify-content-between">
+                <form class="d-flex align-items-center ps-5 w-50">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <i class="ri-search-line "></i>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon Toggle"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ps-5">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link" href="#featured">Featured</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link" href="#bestseller">Bestsellers</a>
+                        </li>
+                        <li class="nav-item ps-5 pe-5">
+                            <a class="nav-link" href="#available">Available</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container p-5">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <div class="home__data">
+                            <h1 class="home__title">
+                                Choose your favorite book
+                            </h1>
+
+                            <h2 class="home__subtitle">
+                                We offer the best of the books in the world
+                            </h2>
+
+                            <h3 class="home__flash">
+                                Buy the book within flashsale <i class="ri-flashlight-fill"></i> to avail discounts
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-11 col-sm-12 pt-3">
+                        <div class="home__card">
+                            <div>
+
+                                <img src="assets/img/Sherlock.PNG" alt="" class="home__img ">
+                                <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                    20%
+                                </div>
+                            </div>
+
+                            <div class="home__card-data">
+
+                                <h2 class="home__card-number">Arthur Conan Doyle</h2>
+                                <div class="d-flex flex-row justify-content-center gap__10">
+                                    <span class="home__card-name1">500</span>
+                                    <span class="home__card-name2">600</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== Featured and Bestseller ====================-->
+        <div class="container ">
+            <div class="row d-flex justify-content-between align-items-center">
+                <section class="col-xxl-3 col-xl-4 col-lg-4 col-md-12 col-sm-12" id="featured">
+                    <h2>Featured books</h2><br>
+                    <div id="demo" class="carousel slide " data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <div class="home__card_carousel">
+                                    <div>
+                                        <img src="assets/img/DanBrown.PNG" alt="" class="home__img_carousel">
+                                        <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                            20%
+                                        </div>
+                                    </div>
+                                    <div class="home__card-data ">
+
+                                        <h2 class="home__card-number">DanBrown</h2>
+                                        <div class="d-flex flex-row justify-content-center gap__10">
+                                            <span class="home__card-name1">600</span>
+                                            <span class="home__card-name2">700</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="home__card_carousel">
+                                    <div>
+                                        <img src="assets/img/HuckleberryFinn.PNG" alt="" class="home__img_carousel">
+                                        <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                            23%
+                                        </div>
+                                    </div>
+                                    <div class="home__card-data ">
+
+                                        <h2 class="home__card-number">HuckleberryFinn</h2>
+                                        <div class="d-flex flex-row justify-content-center gap__10">
+                                            <span class="home__card-name1">700</span>
+                                            <span class="home__card-name2">800</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="home__card_carousel">
+                                    <div>
+                                        <img src="assets/img/LeoTolstoy.PNG" alt="" class="home__img_carousel">
+                                        <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                            25%
+                                        </div>
+                                    </div>
+                                    <div class="home__card-data ">
+
+                                        <h2 class="home__card-number">LeoTolstoy</h2>
+                                        <div class="d-flex flex-row justify-content-center gap__10">
+                                            <span class="home__card-name1">800</span>
+                                            <span class="home__card-name2">900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </section>
+                <section class="col-xxl-9 col-xl-8 col-lg-8 col-md-12 col-sm-12 pt-3" id="bestseller">
+                    <h2>Bestseller books</h2><br>
+                    <div class="swiper bestsellers">
+                        <div class="swiper-wrapper">
+                            <div class="home__card_slide swiper-slide">
+                                <div>
+                                    <img src="assets/img/DanBrown.PNG" alt="" class="home__img_carousel">
+                                    <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                        20%
+                                    </div>
+                                </div>
+                                <div class="home__card-data ">
+
+                                    <h2 class="home__card-number">DanBrown</h2>
+                                    <div class="d-flex flex-row justify-content-center gap__10">
+                                        <span class="home__card-name1">600</span>
+                                        <span class="home__card-name2">700</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home__card_slide swiper-slide">
+                                <div>
+                                    <img src="assets/img/HuckleberryFinn.PNG" alt="" class="home__img_carousel">
+                                    <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                        23%
+                                    </div>
+                                </div>
+                                <div class="home__card-data ">
+
+                                    <h2 class="home__card-number">HuckleberryFinn</h2>
+                                    <div class="d-flex flex-row justify-content-center gap__10">
+                                        <span class="home__card-name1">700</span>
+                                        <span class="home__card-name2">800</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home__card_slide swiper-slide">
+                                <div>
+                                    <img src="assets/img/LeoTolstoy.PNG" alt="" class="home__img_carousel">
+                                    <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                        25%
+                                    </div>
+                                </div>
+                                <div class="home__card-data ">
+
+                                    <h2 class="home__card-number">LeoTolstoy</h2>
+                                    <div class="d-flex flex-row justify-content-center gap__10">
+                                        <span class="home__card-name1">800</span>
+                                        <span class="home__card-name2">900</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home__card_slide swiper-slide">
+                                <div>
+
+                                    <img src="assets/img/Sherlock.PNG" alt="" class="home__img">
+                                    <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                        20%
+                                    </div>
+                                </div>
+
+                                <div class="home__card-data">
+
+                                    <h2 class="home__card-number mt-0 pt-0">Arthur Conan Doyle</h2>
+                                    <div class="d-flex flex-row justify-content-center gap__10">
+                                        <span class="home__card-name1">500</span>
+                                        <span class="home__card-name2">600</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- Available books -->
+        <section class="container" id="available">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 pt-5">
+                    <h2>Filter List</h2>
+                    <ul class="d-flex flex-column filter_list">
+                        <li class="filter_item gap__10">
+                            <label for="all">All</label>
+                            <input type="checkbox" class="filter_link" id="all" name="all" data-filter="all">
+                        </li>
+                        <li class="filter_item gap__10">
+                            <label for="fiction">Fiction</label>
+                            <input type="checkbox" class="filter_link" id="fiction" name="fiction"
+                                data-filter=".fiction">
+                        </li>
+                        <li class="filter_item gap__10">
+                            <label for="crime">Crime</label>
+                            <input type="checkbox" class="filter_link" id="crime" name="crime" data-filter=".crime">
+                        </li>
+                        <li class="filter_item gap__10">
+                            <label for="comedy">Comedy</label>
+                            <input type="checkbox" class="filter_link" id="comedy" name="comedy" data-filter=".comedy">
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 pt-3">
+                    <h2>Available books</h2><br>
+                    <div class="filter d-flex flex-row flex-wrap gap__10">
+                        <div class="home__card_slide_avail mix crime filter_card">
+                            <div>
+                                <img src="assets/img/DanBrown.PNG" alt="" class="home__img_carousel">
+                                <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                    20%
+                                </div>
+                            </div>
+                            <div class="home__card-data ">
+
+                                <h2 class="home__card-number">DanBrown</h2>
+                                <div class="d-flex flex-row justify-content-center gap__5">
+                                    <span class="home__card-name1">600</span>
+                                    <span class="home__card-name2">700</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__card_slide_avail mix comedy filter_card">
+                            <div>
+                                <img src="assets/img/HuckleberryFinn.PNG" alt="" class="home__img_carousel">
+                                <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                    23%
+                                </div>
+                            </div>
+                            <div class="home__card-data ">
+
+                                <h2 class="home__card-number">HuckleberryFinn</h2>
+                                <div class="d-flex flex-row justify-content-center gap__5">
+                                    <span class="home__card-name1">700</span>
+                                    <span class="home__card-name2">800</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__card_slide_avail mix fiction filter_card">
+                            <div>
+                                <img src="assets/img/LeoTolstoy.PNG" alt="" class="home__img_carousel">
+                                <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                    25%
+                                </div>
+                            </div>
+                            <div class="home__card-data ">
+
+                                <h2 class="home__card-number">LeoTolstoy</h2>
+                                <div class="d-flex flex-row justify-content-center gap__5">
+                                    <span class="home__card-name1">800</span>
+                                    <span class="home__card-name2">900</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__card_slide_avail mix crime filter_card">
+                            <div>
+
+                                <img src="assets/img/Sherlock.PNG" alt="" class="home__img">
+                                <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                    20%
+                                </div>
+                            </div>
+
+                            <div class="home__card-data">
+
+                                <h2 class="home__card-number mt-0 pt-0">Arthur Conan Doyle</h2>
+                                <div class="d-flex flex-row justify-content-center gap__5">
+                                    <span class="home__card-name1">500</span>
+                                    <span class="home__card-name2">600</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__card_slide_avail mix fiction filter_card">
+                            <div>
+
+                                <img src="assets/img/MInecraft.PNG" alt="" class="home__img">
+                                <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                    20%
+                                </div>
+                            </div>
+
+                            <div class="home__card-data">
+
+                                <h2 class="home__card-number mt-0 pt-0">Arthur Conan Doyle</h2>
+                                <div class="d-flex flex-row justify-content-center gap__5">
+                                    <span class="home__card-name1">500</span>
+                                    <span class="home__card-name2">600</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__card_slide_avail mix fiction filter_card">
+                            <div>
+
+                                <img src="assets/img/DavidLodge.PNG" alt="" class="home__img">
+                                <div class="home__card-icon badge rounded-pill bg-danger p-2">
+                                    20%
+                                </div>
+                            </div>
+
+                            <div class="home__card-data">
+
+                                <h2 class="home__card-number mt-0 pt-0">Arthur Conan Doyle</h2>
+                                <div class="d-flex flex-row justify-content-center gap__5">
+                                    <span class="home__card-name1">500</span>
+                                    <span class="home__card-name2">600</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section pt-5">
+        <hr>
+
+        <div class="footer__container container ">
+            <div class="row d-flex justify-content-center align-items-center">
+
+                <div class="footer__content col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <h3 class="footer__title">
+                        Company
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Career</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">History</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <h3 class="footer__title">
+                        Policies
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Privacy Policies</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Secure Shopping</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Copyright Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__content col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <h3 class="footer__title">
+                        Help
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Payment</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Return</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 mt-3">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-book-fill"></i> Bestbook
+                    </a>
+
+                    <p class="footer__description ms-3">
+                        We offer the best <br> of the books in the world
+                    </p>
+                    <h3 class="footer__title">
+                        Follow us
+                    </h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">
+                &#169; FrontendDev.org. All rigths reserved
+            </span>
+
+        </div>
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP JS ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=============== Bootstrap JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

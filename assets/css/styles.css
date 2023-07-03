@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(219, 69%, 56%);
+  --first-color-alt: hsl(219, 69%, 52%);
+  --title-color: hsl(219, 8%, 95%);
+  --text-color: hsl(219, 8%, 75%);
+  --text-color-light: hsl(219, 4%, 55%);
+
+  /*========== Font and typography ==========*/
+
+  --body-font: 'Exo', sans-serif;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Navbar ==========*/
+
+#navbar {
+  position: fixed;
+  height: calc(max-content+50px);
+  top: 0;
+  width: 100%;
+  z-index: var(--z-fixed);
+  background-color: var(--first-color);
+  color: white;
+}
+
+.navbar:hover,
+.nav-active {
+  box-shadow: 2px 2px 5px gray;
+}
+
+.Toggle {
+  font-size: small;
+}
+
+.ri-search-line {
+  margin-top: 3px;
+  font-size: large;
+  font-weight: 700;
+  background-color: white;
+  color: var(--first-color-alt);
+  padding: 3px 5px;
+  margin-left: 0;
+}
+
+.search_bar {
+  width: 80%;
+}
+
+/* ========== Home =========== */
+
+.home__data {
+  text-align: center;
+}
+
+.home__title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.home__subtitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.home__flash {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+
+}
+
+.home__flash i {
+  color: var(--first-color);
+}
+
+.home__card-icon {
+  position: absolute;
+}
+
+.home__card-number {
+  padding-top: 20px;
+  font-size: medium;
+  font-weight: 400;
+  text-align: center;
+}
+
+.home__card-name1 {
+  font-size: large;
+  font-weight: 500;
+  text-align: center;
+}
+
+.home__card-name2 {
+  text-decoration: line-through;
+  text-align: center;
+}
+
+.home__card {
+  border: 1px solid black;
+  max-width: 365px;
+  padding-left: 10px;
+}
+
+.home__card_carousel {
+  border: 1px solid black;
+  max-width: 365px;
+  padding-left: 10px;
+  z-index: -1;
+}
+
+@media screen and (min-width:768) {
+  .home__card_carousel {
+    border: 1px solid black;
+    max-width: 250px;
+    padding-left: 10px;
+  }
+}
+
+.home__img {
+  width: 95%;
+
+}
+
+.home__img_carousel {
+  width: 90%;
+}
+
+.gap__10 {
+  gap: 10px 10px;
+}
+
+.gap__5 {
+  gap: 5px 5px;
+}
+
+.home__card_slide {
+  border: 1px solid black;
+  max-width: 200px;
+  height: 342px;
+
+}
+
+.home__card_slide_avail {
+  border: 1px solid black;
+  max-width: 200px;
+  height: 342px;
+  margin: 0 20px;
+}
+
+.filter_list {
+  list-style-type: none;
+}
+
+.filter_item {
+  width: 130px;
+  display: flex;
+  justify-content: start;
+}
+
+@media screen and (min-width:992px) {
+  .bestseller {
+    padding: 0 30px;
+  }
+}
+
+/* ============== footer ============= */
+
+.footer__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+  margin-left: 1.6rem;
+  margin-top: .25rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+.footer__logo,
+.footer__social-link {
+  text-decoration: none;
+}
+
+.footer__logo {
+  margin-top: .25rem;
+  font-size: large;
+  padding-left: 25px;
+
+}
+
+.footer__description {
+  margin-top: 1.25rem;
+  font-size: medium;
+  padding-left: 25px;
+}
+
+.footer__copy {
+  display: block;
+  margin-bottom: 4.5rem;
+  text-align: center;
+  font-size: var(--medium-font-size);
+  color: var(--text-color-light);
+}
+
+.footer__social-link {
+  font-size: 1.25rem;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.footer__social-link:hover {
+  background-color: silver;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+/*=============== SCROLL BAR ===============*/
+
+::-webkit-scrollbar {
+  width: .4rem;
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid var(--first-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+  border-radius: 1rem;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--first-color-alt);
+
+}
+
+/*=============== SCROLL UP ===============*/
+
+.scrollup {
+  position: fixed;
+  right: -3rem;
+  bottom: 3rem;
+  background-color: hsla(0, 0%, 100%, .1);
+  backdrop-filter: blur(16px);
+  display: inline-flex;
+  padding: .45rem;
+  border-radius: .5rem;
+  font-size: 1.15rem;
+  color: var(--first-color);
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  border: 1px solid var(--first-color);
+  text-decoration: none;
+}
+
+.scrollup:hover {
+  transform: translateY(-.25rem);
+}
+
+/* ============== Show Scroll Up ===========*/
+
+.show-scroll {
+  right: 3rem;
+}
